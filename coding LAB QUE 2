@@ -1,0 +1,58 @@
+package QUIZ2;
+
+import java.util.Scanner;
+
+public class labque2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double markA,markB,markC;
+		
+		do {
+			
+			System.out.println("\nENTER THE MARK NUMBR FOR STUDENT 1 e.g (0-100): ");
+			markA = sc.nextInt();
+			
+			if((markA<0) || (markA>100)){
+				System.out.println("INVALID INPUT, TRY AGAIN...");
+				
+			}
+			
+		}while ((markA<0) || (markA>100));
+		
+		do {
+			System.out.println("\nENTER THE MARK NUMBR FOR STUDENT 2 e.g (0-100): ");
+			markB = sc.nextInt();
+			
+			if((markB<0) || (markB>100)){
+				System.out.println("INVALID INPUT, TRY AGAIN...");
+				
+			}
+			
+		}while ((markB<0) || (markB>100));
+		
+		do {
+			System.out.println("\nENTER THE MARK NUMBR FOR STUDENT 3 e.g (0-100): ");
+			markC = sc.nextInt();
+			
+			if((markC<0) || (markC>100)){
+				System.out.println("INVALID INPUT, TRY AGAIN...");
+				
+			}
+			
+		}while ((markC<0) || (markC>100));
+
+		double average =(markA+markB+markC)/3;
+		
+		System.out.printf("The average is: "+ "%.2f",average);
+		
+		
+		
+	}
+
+
+	}
+
